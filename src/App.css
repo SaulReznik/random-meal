@@ -12,6 +12,14 @@
   margin: 20px;
 }
 
+ul {
+  padding-inline-start: 20px;
+}
+
+li {
+  text-align: left;
+}
+
 /*--------------------Header-----------------*/
 
 #get-meal-btn {

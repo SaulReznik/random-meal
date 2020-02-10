@@ -17,11 +17,13 @@ export default function AdditionalInfo(props) {
                 <span className='category-area-text'><strong>Area:</strong> {area}</span>
                 <h2>Ingredients</h2>
                 {/* Creating list from ingredients object */}
-                {
-                    Object.entries(ingredients).map((item, index) => {
-                        return <span key={index}><strong>{item[0]}:</strong> {item[1]}</span>
-                    })
-                }
+                <ul>
+                    {
+                        Object.entries(ingredients).map((item, index) => {
+                            return <li key={index}><strong>{item[0]}:</strong> {item[1]}</li>
+                        })
+                    }
+                </ul>
             </div>
         </div>
     )
